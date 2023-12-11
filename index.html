@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Ultimate Student Productivity Hub</title>
+</head>
+<body>
+    <div class="container">
+        <script src="app.js"></script>
+        <header>
+            <h1>Ultimate Student Productivity Hub</h1>
+            <button id="themeSwitch" onclick="toggleTheme()">Toggle Theme</button>
+        </header>
+        <section id="todoApp" class="app-section">
+            <!-- To-Do List -->
+            <!-- ... -->
+            <h2>To-Do List</h2>
+            <ul id="taskList"></ul>
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button onclick="addTask()">Add Task</button>
+        </section>
+        <section id="timerApp" class="app-section">
+            <!-- Timer -->
+            <!-- ... -->
+            <h2>Timer</h2>
+            <div id="timer">00:00</div>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+        </section>
+        <section id="notesApp" class="app-section">
+            <!-- Categorized Notes -->
+            <!-- ... -->
+            <h2>Notes</h2>
+            <textarea id="noteInput" placeholder="Take a note..."></textarea>
+            <button onclick="addNote()">Add Note</button>
+        </section>
+        <section id="quotesApp" class="app-section">
+            <!-- Motivational Quotes -->
+            <!-- ... -->
+            <h2>Motivational Quotes</h2>
+            <p id="quoteDisplay"></p>
+            <button onclick="getRandomQuote()">Get Quote</button>
+        </section>
+    </div>
+</body>
+</html>
